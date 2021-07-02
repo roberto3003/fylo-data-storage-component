@@ -10,35 +10,35 @@
 	<title>Fylo data storage component</title>
 
   </head>
-  <body>
+  <body class="center">
 	<div class="container">
 	  <div class="wrapper flex">
-	  <div class="header flex flex-col">
-		<div class="logo"><img src="./images/logo.svg" alt="company's logo"></div>
-		<nav class="flex">
-		  <a href=""><div class="icon"><img src="./images/icon-document.svg" alt="document"></div></a>
-		  <a href=""><div class="icon"><img src="./images/icon-folder.svg" alt="folder"></div></a>
-		  <a href=""><div class="icon"><img src="./images/icon-upload.svg" alt="upload"></div></a>
-		</nav>
+		<div class="header flex flex-col">
+		  <div class="logo"><img src="./images/logo.svg" alt="company's logo"></div>
+		  <nav class="flex">
+			<a href=""><div class="icon center"><img src="./images/icon-document.svg" alt="document"></div></a>
+			<a href=""><div class="icon center"><img src="./images/icon-folder.svg" alt="folder"></div></a>
+			<a href=""><div class="icon center"><img src="./images/icon-upload.svg" alt="upload"></div></a>
+		  </nav>
+		</div>
+		<main class="flex flex-col">
+		  <div class="progres-bar flex flex-col">
+			<label for="file" class="bar">
+			  <p>You’ve used 
+			  <strong>815 GB</strong> of your storage 
+			  </p>
+			</label>
+			<progress id="file" value="815" max="1000"></progress>
+			<div class="space flex">
+			  <p><strong>0 GB</strong></p>
+			  <p><strong>1000 GB</strong></p>
+			</div>
+			<div class="remaining-space flex">
+			  <p><strong>185 GB Left</strong></p>
+			</div>
+		  </div>
+		</main>
 	  </div>
-	  <main class="flex flex-col">
-		<div class="progres-bar flex flex-col">
-		  <div class="bar">
-			<p>You’ve used 
-			<strong>815 GB</strong> of your storage
-			<progress value="815" max="1000"></progress>
-			</p>
-		  </div>
-		  <div class="space flex">
-			<p><strong>0 GB</strong></p>
-			<p><strong>1000 GB</strong></p>
-		  </div>
-		</div>
-		<div class="remaining-space">
-		  <p><strong>185 GB Left</strong></p>
-		</div>
-	  </main>
-</div>
 	</div>
   </body>
 </html>

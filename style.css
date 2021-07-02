@@ -1,27 +1,39 @@
 :root {
---light: white;
---dark: black;
---medium: mediumblue;
---accent: lightcoral;
---padding: 2rem;
+  --light: white;
+  --dark: black;
+  --medium: mediumblue;
+  --accent: lightpink;
+  --padding: 2rem;
+  --font-size: calc(1rem + 0.5vw);
+}
+
+* {
+  border-radius: calc(var(--padding)/2);
 }
 
 html {
   height: 100%;
-background-size: 100% 100%;
-background-position: 0px 0px;
-background-image: radial-gradient(75% 75% at 50% 50%, #012086FF 2%, #010D25FF 99%);
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: radial-gradient(75% 75% at 50% 50%, #012086FF 2%, #010D25FF 99%);
 }
 
 body {
   height: 100%;
   margin:0;
-  display: grid;
-  place-items: center;
   color: var(--light);
   font-family: system-ui;
-  font-size: calc(1rem + 0.5vw);
+  font-size: var(--font-size);
 } 
+
+main {
+  align-self: flex-end;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
 
 .flex {
   display: flex;
@@ -35,12 +47,13 @@ body {
 
 
 .container {
- width: 80vw;
+  width: 80vw;
   min-width: 320px;
   padding: var(--padding) 0;
 }
 
 .wrapper > * {
+  justify-content: space-evenly;
   flex-grow: 1;
   flex-basis: calc(( 20em - 100%) * 999);
   background-color: var(--medium);
@@ -52,4 +65,31 @@ body {
   flex-basis: 100%;
 }
 
+.icon {
+  width: 2em;
+  height: 2em;
+  background-color: #012086FF;
+}
 
+.icon img {
+  border-radius: initial;
+}
+
+.progres-bar {
+  justify-content: flex-end;
+  gap: initial;
+}
+
+progress {
+  width: 100%;
+  overflow: hidden;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.remaining-space p {
+  margin-inline-start: auto;
+  color: var(--accent);
+}
