@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css" media="all">
-  
-  <title>Fylo data storage component</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="style.css" media="all">
 
-</head>
-<body>
+	<title>Fylo data storage component</title>
 
-
-</body>
+  </head>
+  <body>
+	<div class="container">
+	  <div class="header flex flex-col">
+		<div class="logo"><img src="" alt=""></div>
+		<nav>
+		  <a href=""><div class="icon"><img src="" alt=""></div></a>
+		  <a href=""><div class="icon"><img src="" alt=""></div></a>
+		  <a href=""><div class="icon"><img src="" alt=""></div></a>
+		</nav>
+	  </div>
+	  <main class="flex flex-col">
+		<div class="progres-bar flex flex-col">
+		  <div class="bar">
+			<p>You’ve used 
+			<strong>815 GB</strong> of your storage
+			<progress value="815" max="1000"></progress>
+			</p>
+		  </div>
+		  <div class="space flex">
+			<p><strong>0 GB</strong></p>
+			<p><strong>1000 GB</strong></p>
+		  </div>
+		</div>
+		<div class="remaining-space">
+		  <p><strong>185 GB Left</strong></p>
+		</div>
+	  </main>
+	</div>
+  </body>
 </html>
